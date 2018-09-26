@@ -99,14 +99,14 @@
   padding-left: 30rpx;
 }
 .itemContainer .item .item_r .caculateData{
-  flex:1;
+  flex:3;
   
 }
 .itemContainer .item .item_r .before_caculateData {
   display: flex;
   flex-direction: column;
   height: 120rpx;
-  flex: 1;
+  flex: 2;
   max-width: 50%;
 }
 .itemContainer .item .item_r .row{

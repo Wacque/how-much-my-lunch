@@ -5,6 +5,7 @@ module.exports = {
   // collections
   c_user: 'user',
   c_order: 'order',
+  c_friends: 'friends',
 
   // 小程序相关
   app_id: 'wx0b5acf0d8142d35a',

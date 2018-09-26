@@ -2,27 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c0bdec2-d250-49aa-abe6-aeb4e301a72b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/errcode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/model/httpsRequest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/model/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/model/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/assets/css/font.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/font.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/assets/css/iconfont.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/view/assets/css/iconfont.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/addlist/addlist.json" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/addlist/addlist.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/pages/addlist/addlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/addlist/addlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/pages/addlist/addlist.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/addlist/addlist.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/pages/addlist/addlist.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/addlist/addlist.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/pages/friends/friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/friends/friends.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/friends/friends.json" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/friends/friends.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/pages/friends/friends.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/friends/friends.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/pages/friends/friends.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/friends/friends.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/index/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/index/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/view/project.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/template/tip/tip.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/view/template/tip/tip.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/utils/util.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/view/utils/util.wxss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,10 +28,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+            <state relative-caret-position="107">
+              <caret line="72" column="65" selection-start-line="72" selection-start-column="65" selection-end-line="72" selection-end-column="65" />
               <folding>
                 <element signature="e#313#1384#0" />
+                <element signature="e#1440#1446#0" />
               </folding>
             </state>
           </provider>
@@ -52,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/server/config/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -108,8 +98,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="198">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -126,8 +116,8 @@
       <file leaf-file-name="friends.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/pages/friends/friends.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="337">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -152,12 +142,12 @@
         <option value="$PROJECT_DIR$/view/app.js" />
         <option value="$PROJECT_DIR$/server/model/httpsRequest.js" />
         <option value="$PROJECT_DIR$/view/pages/index/index.js" />
-        <option value="$PROJECT_DIR$/server/config/index.js" />
         <option value="$PROJECT_DIR$/server/model/common.js" />
         <option value="$PROJECT_DIR$/server/config/errcode.js" />
         <option value="$PROJECT_DIR$/server/model/db.js" />
         <option value="$PROJECT_DIR$/view/pages/friends/friends.js" />
         <option value="$PROJECT_DIR$/server/app.js" />
+        <option value="$PROJECT_DIR$/server/config/index.js" />
         <option value="$PROJECT_DIR$/server/router/index.js" />
       </list>
     </option>
@@ -173,7 +163,7 @@
       <path value="$PROJECT_DIR$/server/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="520" />
     <option name="y" value="192" />
     <option name="width" value="1506" />
@@ -331,7 +321,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537936317776</updated>
-      <workItem from="1537936319432" duration="15744000" />
+      <workItem from="1537936319432" duration="20234000" />
     </task>
     <task id="LOCAL-00001" summary="server common methods">
       <created>1537939341120</created>
@@ -358,7 +348,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15744000" />
+    <option name="totallyTimeSpent" value="20234000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -370,10 +360,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1519" height="977" extended-state="7" />
+    <frame x="-7" y="-7" width="1519" height="977" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24949427" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24949427" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297619" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -381,7 +371,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3297619" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3297619" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -463,13 +453,6 @@
     <entry file="file://$PROJECT_DIR$/view/pages/index/index.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/model/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -481,13 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/model/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -517,24 +493,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/pages/friends/friends.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="337">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/model/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="198">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+        <state relative-caret-position="107">
+          <caret line="72" column="65" selection-start-line="72" selection-start-column="65" selection-end-line="72" selection-end-column="65" />
           <folding>
             <element signature="e#313#1384#0" />
+            <element signature="e#1440#1446#0" />
           </folding>
         </state>
       </provider>

@@ -5,7 +5,7 @@ const formidable = require('formidable')
 const httpsRequest = require('../model/httpsRequest')
 const defaultData = require('../model/common').defaultData
 
-
+// 登录
 exports.login = (req, res, next) => {
   const form = new formidable.IncomingForm()
   form.parse(req, (err, fields, file) => {
@@ -48,7 +48,13 @@ exports.setUserMes = (req, res, next) => {
   form.parse(req, (err, fields, file) => {
     tokenQuery(res, fields.openid, userMes => {
       db.updateMany(res, config.c_user, {openid: fields.openid}, {$set: {nickName: fields.nickName, avatar: fields.avatar, gender: fields.gender}}, (err, dbRes) => {
-        res.json(new defaultData(errcode.CODE_SUCCESS.code, [], 0, errcode.CODE_SUCCESS.msg))
+        db.insertOne(res, config.c_friends, {referto: fields.openid, friendName: fields.name, friendAvatar: fields.avatar}, (err, dbRes) => {
+          db.find(res, config.c_friends, {referto: fields.openid}, (err, dbRes, count) => {
+            res.json(new defaultData(errcode.CODE_SUCCESS.code, dbRes, count, errcode.CODE_SUCCESS.msg))
+          }, 0, 0)
+          // res.json(new defaultData(errcode.CODE_SUCCESS.code, [{avatar: fields.avatar, friendName: fields.name}], 0, errcode.CODE_SUCCESS.msg))
+        })
+        // res.json(new defaultData(errcode.CODE_SUCCESS.code, [], 0, errcode.CODE_SUCCESS.msg))
       })
     })
   })
@@ -60,9 +66,27 @@ exports.getUserMes = (req, res, next) => {
   form.parse(req, (err, fields, file) => {
     tokenQuery(res, fields.openid, userMes => {
       let mes = {}
-      mes.avatar = userMes[0].avatar
-      mes.nickName = userMes[0].nickName
-      res.json(new defaultData(errcode.CODE_SUCCESS.code, mes, 1, errcode.CODE_SUCCESS.msg))
+      if(mes.hasOwnProperty('avatar')) {
+        mes.avatar = userMes[0].avatar
+        mes.nickName = userMes[0].nickName
+
+        res.json(new defaultData(errcode.CODE_SUCCESS.code, [mes], 1, errcode.CODE_SUCCESS.msg))
+      }else {
+        res.json(new defaultData(errcode.CODE_SUCCESS.code, [], 1, errcode.CODE_SUCCESS.msg))
+      }
+
+    })
+  })
+}
+
+// addFriend
+exports.addFriend = (req, res, next) => {
+  const form = new formidable.IncomingForm()
+  form.parse(req, (err, fields, file) => {
+    tokenQuery(res, fields.openid, userMes => {
+      db.insertOne(res, config.c_friends, {referto: fields.openid, friendName: fields.name, friendAvatar: fields.avatar}, (err, dbRes) => {
+        res.json(new defaultData(errcode.CODE_SUCCESS.code, [{avatar: fields.avatar, friendName: fields.name}], 0, errcode.CODE_SUCCESS.msg))
+      })
     })
   })
 }

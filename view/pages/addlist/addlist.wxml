@@ -44,7 +44,7 @@
 
             </view>
             <view wx:if='{{item.realPay !== ""}}' class='caculateData flexCenter'>
-             ==> {{item.realPay}}
+              {{item.realPay}}
             </view>
           </view>
           <view class=' {{(item.complete && (index != items.length - 1)) ? "backMain" : ""}} item_arrow flexCenter'>

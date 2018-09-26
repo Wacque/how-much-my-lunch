@@ -1,7 +1,30 @@
 <!--pages/friends/friends.wxml-->
-<view class="firstFriendContainer">
-  <view>
+<view wx:if='{{userInfo.length == 0}}' class="firstFriendContainer">
+  <view >
     <view class='tip'>我需要知道你的名字~</view>
     <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">好的</button>
+  </view>
+</view>
+<view class='friends' wx:else>
+  <view class='content '>
+  
+    <view class='flexCenter item'>
+      <text bindtap='showCover'  class='iconfont icon-plus colorMain font-6-20'></text>
+    </view>
+    <view  wx:for="{{friends}}" class='item flexCenter'>
+      <view class='avatar flexCenter'>
+        <image src='{{item.avatar}}' mode='widthFix'></image>
+      </view>
+      <view class='name fontStyleItalic'>
+        {{item.nickName}}
+      </view>
+    </view>
+  </view>
+</view>
+<view class='cover flexCenter' wx:if='{{coverShow}}'>
+  <view class='coverContent'>
+    <view>
+      <input type='text' bindconfirm='addFriend' bindinput='friendInput' class='font-6-33  fontStyleBold' placeholder='新朋友的名字？' auto-focus='true'></input>
+    </view>
   </view>
 </view>

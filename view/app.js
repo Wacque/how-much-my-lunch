@@ -34,6 +34,9 @@ App({
       }
     })
   },
+  loginReadyCallBack: function (res) {
+    return res
+  },
   getUserInfo: function() {
     var that = this
     this.wxrequest({
@@ -42,11 +45,14 @@ App({
         openid: that.globalData.openid
       },
       success: res => {
-        console.log(res)
+        that.globalData.userInfo = res.data.data.results
+        if (that.getUserMesCallback) {
+          that.getUserMesCallback(res.data.data.results)
+        }
       }
     })
   },
-  loginReadyCallBack: function (res) {
+  getUserMesCallback: function(res) {
     return res
   },
   wxrequest: function (params) {
@@ -81,7 +87,7 @@ App({
   globalData: {
     userInfo: null,
     // baseUrl: 'https://router.wuacque.cn',
-    baseUrl: 'http://192.168.1.27:3002',
+    baseUrl: 'http://192.168.199.116:3002',
     openid: ''
   }
 })

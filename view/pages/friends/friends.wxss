@@ -38,3 +38,45 @@
 .firstFriendContainer button::before{
   display: none;
 }
+
+.friends .item{
+  width: 98%;
+  margin: auto;
+  height: 160rpx;
+  box-shadow: 0 0 10rpx 3rpx rgba(233,233,233,0.5);
+  border-radius: 10rpx 
+}
+.friends .item .avatar {
+  flex: 0 0 200rpx
+}
+.friends .item .name{
+  flex: 1
+}
+.friends .item .avatar image{
+  width: 120rpx;
+  height: 120rpx;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid rgb(233,233,233)
+}
+
+.cover{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  opacity: 0;
+  top:0;
+  background: rgba(255,255,255,0.7);
+  animation: coverShow 0.5s both;
+}
+.cover .coverContent input{
+  text-align: center;
+  display: block;
+  height: 100rpx;
+  margin-bottom: 100rpx;
+}
+@keyframes coverShow{
+ from {opacity: 0}
+ to {opacity: 1}
+}

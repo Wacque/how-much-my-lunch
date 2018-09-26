@@ -178,9 +178,9 @@ Page({
       // console.log(data[j].value + '=>' + (data[j].value / sum * payed).toFixed(2))
     }
     this.setData({
-      items: data
+      items: data,
+      coverShow: false
     })
-    console.log(data)
   },
 
   /**
