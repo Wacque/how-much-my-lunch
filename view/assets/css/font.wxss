@@ -1,0 +1,100 @@
+<<<<<<< HEAD
+
+.font-6-36{
+	font-size:72rpx;
+}
+.font-6-33{
+	font-size:66rpx;
+}
+.font-6-28{
+	font-size:56rpx;
+}
+.font-6-26{
+	font-size:52rpx;
+}
+.font-6-24{
+	font-size:48rpx;
+}
+.font-6-22{
+	font-size:44rpx;
+}
+.font-6-20{
+	font-size:40rpx;
+}
+.font-6-18{
+	font-size:36rpx;
+}
+.font-6-17{
+	font-size:34rpx;
+}
+.font-6-16{
+	font-size:32rpx;
+}
+.font-6-15{
+	font-size:30rpx;
+}
+.font-6-14{
+	font-size:28rpx;
+}
+.font-6-13{
+	font-size:26rpx;
+}
+.font-6-12{
+	font-size:24rpx;
+}
+.font-6-11{
+	font-size:22rpx;
+}
+.font-6-10{
+	font-size:20rpx;
+=======
+
+.font-6-36{
+	font-size:72rpx;
+}
+.font-6-33{
+	font-size:66rpx;
+}
+.font-6-28{
+	font-size:56rpx;
+}
+.font-6-26{
+	font-size:52rpx;
+}
+.font-6-24{
+	font-size:48rpx;
+}
+.font-6-22{
+	font-size:44rpx;
+}
+.font-6-20{
+	font-size:40rpx;
+}
+.font-6-18{
+	font-size:36rpx;
+}
+.font-6-17{
+	font-size:34rpx;
+}
+.font-6-16{
+	font-size:32rpx;
+}
+.font-6-15{
+	font-size:30rpx;
+}
+.font-6-14{
+	font-size:28rpx;
+}
+.font-6-13{
+	font-size:26rpx;
+}
+.font-6-12{
+	font-size:24rpx;
+}
+.font-6-11{
+	font-size:22rpx;
+}
+.font-6-10{
+	font-size:20rpx;
+>>>>>>> e6cb44d1c84875c3b2860d04955d313bfb7c6116
+}

@@ -1,0 +1,36 @@
+{
+  "pages":[
+   "pages/index/index",
+    "pages/addlist/addlist",
+    
+   
+    "pages/friends/friends"
+    
+  ],
+  "tabBar": {
+    "backgroundColor": "#F4F4F4",
+    "selectedColor": "black",
+    "borderStyle": "white",
+    "color": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "饭单",
+        "iconPath": "assets/image/list_deactive.png",
+        "selectedIconPath": "assets/image/list_active.png"
+      },
+      {
+        "pagePath": "pages/friends/friends",
+        "text": "饭友",
+        "iconPath": "assets/image/friends_deactive.png",
+        "selectedIconPath": "assets/image/friends_active.png"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,78 @@
+<!--pages/addlist/addlist.wxml-->
+<view class='cover flexCenter' wx:if='{{coverShow}}'>
+  <view class='coverContent'>
+    <view>
+      <input type='text' bindconfirm='caculate' bindinput='caculateInput' class='font-6-33  fontStyleBold' placeholder='总共付了多少钱？' auto-focus='true'></input>
+    </view>
+  </view>
+</view>
+<view bindtap='containerTab' class='container {{coverShow ? "blur" : ""}}'>
+  <view class='content {{sideShow ? "sideShow" : ""}}'>
+    <scroll-view bindtap='hideSide' class='l {{sideShow ? "blur" : ""}}'>
+      <view wx:for='{{items}}' class='itemContainer '>
+        <view 
+          data-index='{{index}}' 
+          bind:touchend='handleToucheEnd' 
+          bind:touchstart="handleToucheStart" 
+          bind:touchmove="handleToucheMove" 
+          class='item {{item.active ? "deleTransition" : " "}}'
+        >
+          <view class='item_l flexCenter'>
+              <image src='{{"../../assets/image/animal/a" + item.avatar + ".png"}}' mode='widthFix'></image>
+          </view>
+          <view class='item_r flexCenter'>
+            <view class='before_caculateData'>
+              <view 
+                wx:if='{{item.complete}}' 
+                class='font-6-14 flexCenter name row fontStyleItalic {{item.complete ? "nameShow" : ""}}'
+              >
+                {{item.name}}
+              </view>
+              <view class='row flexCenter'>
+                <input 
+                  placeholder='{{item.name}}多少钱' 
+                  bindblur='textBlur' 
+                  data-index='{{index}}' 
+                  auto-focus='true' 
+                  class='font-6-18 fontStyleItalic fontStyleBold' 
+                  type='text' 
+                  confirm-type='next' 
+                  bindconfirm='showSide'
+                  value='{{item.value}}'  
+                ></input>
+              </view>
+
+            </view>
+            <view wx:if='{{item.realPay !== ""}}' class='caculateData flexCenter'>
+             ==> {{item.realPay}}
+            </view>
+          </view>
+          <view class=' {{(item.complete && (index != items.length - 1)) ? "backMain" : ""}} item_arrow flexCenter'>
+            <text 
+              class='ok' 
+              catchtap='showSide' 
+              wx:if='{{item.complete && index == items.length - 1}}'
+            >ok</text>
+
+          </view>
+        </view>
+        <view catchtap='delete' data-index='{{index}}' class='deleteButton'>
+          删除
+        </view>
+      </view>
+
+    </scroll-view>
+    <scroll-view class='r ' scroll-y='true'>
+      <view bindtap='showCover' class='caculate font-6-14 fontStyleBold flexCenter backMain'>计算</view>
+      <image 
+        bindtap='addAFriend' 
+        class='{{item.peopleDisable ? "peopleDisable" : ""}}' 
+        data-index='{{index}}' 
+        wx:for='{{people}}' 
+        src='{{"../../assets/image/animal/a" + item.avatar +".png"}}' 
+        mode='widthFix'
+      ></image>
+      
+    </scroll-view>
+  </view>
+</view>

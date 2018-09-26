@@ -1,0 +1,12 @@
+/**app.wxss**/
+@import './assets/css/iconfont.wxss';
+@import './utils/util.wxss';
+@import './assets/css/font.wxss';
+
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+

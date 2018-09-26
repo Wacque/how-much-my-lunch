@@ -1,0 +1,133 @@
+/**index.wxss**/
+.plusContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.plusContainer > view {
+  text-align: center
+}
+.plusContainer .iconfont {
+  font-size: 160rpx;
+  background: linear-gradient(to right, red ,blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.plusContainer  .tip {
+  font-size: 24rpx;
+  margin-top: 30rpx;
+  color: rgb(186,186,186);
+  height: 40rpx;
+  width: 100%;
+  text-align: center
+}
+
+.trans{
+  width: 100%;
+  position: relative;
+  left: 300rpx;
+  opacity: 0;
+  padding: 20rpx 20px;
+  padding-left: 110rpx; 
+  
+  border-radius: 10rpx;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box
+}
+.transActive {
+  animation: trans0 0.5s both;
+}
+@keyframes trans0 {
+  from{left: 100px;opacity: 0}
+  to{left: 0px;opacity: 1}
+}
+.trans .back{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  display: block;
+  left: 48rpx;
+  top: 60rpx;
+  /* bottom: 0; */
+  margin: auto;
+  background: white;
+  /* background: rgba(233,233,233,1) */
+  /* filter: grayscale(100%) */
+}
+.trans::before{
+  left: 64rpx;
+}
+.itemContent{
+  background: rgb(233,233,233);
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  position: relative;
+  max-width:100%;
+  white-space:  normal
+}
+.itemContent::after{
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 0rpx;
+  height: 0rpx;
+  border-style: solid;
+  border-color: transparent  rgb(233,233,233) transparent transparent;
+  border-width:18rpx 15rpx;
+  left: -27rpx;
+  top: 37rpx;
+}
+.itemContent > view {
+  white-space: normal;
+  margin-top: 23rpx;
+  overflow: hidden
+}
+.itemContent view.text {
+  line-height: 130%
+}
+.itemContent .itemImgBox {
+  display: flex
+}
+.itemContent .itemImgBox image{
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right:20rpx;
+  border: 4rpx solid white;
+}
+.plusBar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%; 
+  position: fixed;
+  right: -110rpx;
+  bottom: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2rpx 8rpx 2rpx rgb(233,233,233);
+  z-index: 1;
+  transition: right 0.5s
+}
+.barShowAni {
+  right: 60rpx
+}
+
+@keyframes barShow {
+  from {right: -100rpx }
+  to {right: 60rpx}
+}
+
+
+scroll-view {
+  width: 100%;
+  height: 100vh;
+}

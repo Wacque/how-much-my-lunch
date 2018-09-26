@@ -1,0 +1,39 @@
+<import src="../../template/tip/tip.wxml" /> 
+<template is='tip' data='{{...item}}'/>
+<!--index.wxml-->
+<view wx:if='{{listData && !listData.length}}' bindtap='addlist' class="plusContainer">
+  <view>
+   <text  class='iconfont icon-plus'></text>
+    <view class='tip'>添加第一个饭单~</view>
+  </view>
+</view>
+
+<!-- 非首次添加按钮 -->
+<view  wx:if='{{listData && listData.length > 1}}' class='plusBar backMain {{plusbarShow ? "barShowAni" : ""}}'>
+
+<text bindtap='addlist' class='iconfont icon-plus font-6-20'></text>
+</view>
+<scroll-view bindscrolltolower="lower"  bindscrolltoupper="upper" class='scrollView' bindscroll='scroller' scroll-y='true'>
+   <view wx:for='{{listData}}'  class='trans transItem left1px {{item.show ? "transActive" : ""}}'>
+   
+    <image class='back' src='{{"../../assets/image/foods/" + item.which + ".png"}}' mode='widthFix'></image>
+    <!-- <view class='back'></view> -->
+    <view class='itemContent'>
+      <view class='date font-6-12 fontStyleItalic'>
+        2018年9月13日 12:24
+      </view>
+      <view class='font-6-14 text'>
+        {{item.name + ''}}
+      <!-- 今天我和 <text class='fontStyleBold'>3</text> 个饭友一起吃了饭 -->
+      </view>
+      <view class='itemImgBox'>
+        <image  src='../../assets/image/animal/a1.png' mode='widthFix'></image>
+        <image  src='../../assets/image/animal/a2.png' mode='widthFix'></image>
+        <image  src='../../assets/image/animal/a3.png' mode='widthFix'></image>
+        <image  src='../../assets/image/animal/a4.png' mode='widthFix'></image>
+      </view>
+    </view>
+    
+   </view>
+</scroll-view>
+

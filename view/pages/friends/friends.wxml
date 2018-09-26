@@ -1,0 +1,7 @@
+<!--pages/friends/friends.wxml-->
+<view class="firstFriendContainer">
+  <view>
+    <view class='tip'>我需要知道你的名字~</view>
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">好的</button>
+  </view>
+</view>
