@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.2.5",
 	"appid": "wx0b5acf0d8142d35a",
-	"projectname": "meat",
+	"projectname": "meat_1",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

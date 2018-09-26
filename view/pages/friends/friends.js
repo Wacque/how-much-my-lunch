@@ -1,23 +1,35 @@
 // pages/friends/friends.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onGotUserInfo: function (e) {
-    console.log(e.detail.errMsg)
     console.log(e.detail.userInfo)
-    console.log(e.detail.rawData)
+    // nickName: fields.nickName, avatar: fields.avatarUrl, gender: fields.gender
+    app.wxrequest({
+      url: app.globalData.baseUrl + '/setusermes',
+      data: {
+        openid: app.globalData.openid,
+        avatar: e.detail.userInfo.avatarUrl,
+        nickName: e.detail.userInfo.nickName,
+        gender: e.detail.userInfo.gender
+      },
+      success: res => {
+        console.log(res)
+      }
+    })
   },
   onLoad: function (options) {
-  
+
   },
 
   /**

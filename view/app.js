@@ -1,40 +1,87 @@
+
 //app.js
 App({
   onLaunch: function () {
-    // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
+    this.login()
+  },
+  login: function () {
     // 登录
+    var that = this
     wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+      success: (res) => {
+        that.wxrequest({
+          retry: that.login,
+          url: that.globalData.baseUrl + '/login',
+          data: {
+            code: res.code
+          },
+          success: function (res) {
+            if (res.data.resultcode === 0) {
+              that.globalData.openid = res.data.data.results[0].openid
+              that.getUserInfo()
+
+            }else {
+              wx.showModal({
+                title: '错误',
+                data: res.msg
+              })
+            }
+            if (that.loginReadyCallBack) {
+              that.loginReadyCallBack(that.globalData.openid)
+            }
+          }
+        })
       }
     })
-    // 获取用户信息
-    wx.getSetting({
+  },
+  getUserInfo: function() {
+    var that = this
+    this.wxrequest({
+      url: that.globalData.baseUrl + '/getUserMes',
+      data: {
+        openid: that.globalData.openid
+      },
       success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-          wx.getUserInfo({
-            success: res => {
-              // 可以将 res 发送给后台解码出 unionId
-              this.globalData.userInfo = res.userInfo
-
-              // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-              // 所以此处加入 callback 以防止这种情况
-              if (this.userInfoReadyCallback) {
-                this.userInfoReadyCallback(res)
-              }
+        console.log(res)
+      }
+    })
+  },
+  loginReadyCallBack: function (res) {
+    return res
+  },
+  wxrequest: function (params) {
+    var that = this
+    wx.request({
+      url: params.url ,
+      method: 'POST',
+      header: { "Content-Type": "application/x-www-form-urlencoded" },
+      data: params.data,
+      success: function (res) {
+        if ((res.data.errmsg && res.data.errmsg.indexOf('80013401') > -1) || (res.data.errmsg && res.data.errmsg.indexOf('80013402') > -1) || (res.data.errmsg && res.data.errmsg.indexOf('80000006') > -1)) {
+          // if (res.data.errmsg.indexOf('80013401') > -1 || res.data.errmsg.indexOf('80000006') > -1) {
+          that.login()
+          that.loginReadyCallBack = res => {
+            that.globalData.token = res
+            // 多啦猫用户信息\
+            if (params.retry) {
+              params.retry()
             }
-          })
+          }
+          // }
+
+        }else {
+          // if(res.data.resultcode == 0) {
+          params.success(res)
+          // }
+
         }
       }
     })
   },
   globalData: {
     userInfo: null,
-    baseUrl: 'https://api.wuacque.cn'
+    // baseUrl: 'https://router.wuacque.cn',
+    baseUrl: 'http://192.168.1.27:3002',
+    openid: ''
   }
 })

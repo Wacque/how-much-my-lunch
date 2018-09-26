@@ -16,21 +16,33 @@ Page({
     listCount: 0
   },
   onLoad: function () {
-   
-    this.firstLoad()
+    if (app.globalData.openid === '') {    // 无token
+      app.loginReadyCallBack = res => {
+        app.globalData.token = res
+        console.log(res)
+        // 多啦猫用户信息
+        this.firstLoad()
+      }
+    }else{
+      console.log(app.globalData.openid)
+      this.firstLoad()
+    }
+    
   },
 
   firstLoad() {
-    wx.request({
-      url: app.globalData.baseUrl + '/firstLoad',
+    app.wxrequest({
+      url: app.globalData.baseUrl + '/orderquery',
       data: {
         pagesize: 0,
-        pageno: 0
+        pageno: 0,
+        openid: app.globalData.openid
       },
       success: res => {
         var data = res.data.data.results
+        console.log(data)
         for(let i = 0 ;i < data.length; i ++) {
-          data[i].which = Math.ceil(Math.random() * 10) 
+          data[i].which = Math.ceil(Math.random() * 10)
         }
         this.setData({
           listData: data
@@ -45,6 +57,16 @@ Page({
         })
       }
     })
+    // wx.request({
+    //   url: app.globalData.baseUrl + '/orderquery',
+    //   data: {
+    //     pagesize: 0,
+    //     pageno: 0
+    //   },
+    //   success: res => {
+    //
+    //   }
+    // })
   },
 
   render(data) {

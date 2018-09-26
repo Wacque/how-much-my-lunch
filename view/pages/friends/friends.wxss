@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* pages/friends/friends.wxss */
 .firstFriendContainer{
   width: 100%;
@@ -37,44 +37,4 @@
 }
 .firstFriendContainer button::before{
   display: none;
-=======
-/* pages/friends/friends.wxss */
-.firstFriendContainer{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center
-}
-.firstFriendContainer .tip{
-  font-size: 28rpx;
-  text-align: center
-}
-.firstFriendContainer .button-hover {
-  color:whoite;
-  background-color:white;
-}
-.firstFriendContainer button{
-  padding-left:1rpx;
-  padding-right:1rpx;
-  box-sizing:border-box;
-  text-align:center;
-  text-decoration:none;
-  border-radius: 10rpx;
-  -webkit-tap-highlight-color:transparent;
-  overflow:hidden;
-  height: 70rpx;
-  width: 200rpx;
-  line-height: 70rpx;
-  margin-top: 50rpx;
-  background: rgb(103,193,178);
-  font-size: 28rpx;
-  color: white;
-}
-.firstFriendContainer button::after{
-  display: none;
-}
-.firstFriendContainer button::before{
-  display: none;
->>>>>>> e6cb44d1c84875c3b2860d04955d313bfb7c6116
 }
