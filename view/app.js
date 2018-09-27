@@ -86,8 +86,8 @@ App({
   },
   globalData: {
     userInfo: null,
-    // baseUrl: 'https://api.wuacque.cn',
-    baseUrl: 'http://192.168.1.27:3001',
+    baseUrl: 'https://api.wuacque.cn',
+    // baseUrl: 'http://192.168.1.27:3001',
     openid: ''
   }
 })

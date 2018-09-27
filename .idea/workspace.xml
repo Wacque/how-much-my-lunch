@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c0bdec2-d250-49aa-abe6-aeb4e301a72b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/model/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/model/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/node_modules/.npminstall.done" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.npminstall.done" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/addlist/addlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/addlist/addlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/addlist/addlist.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/addlist/addlist.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/addlist/addlist.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/addlist/addlist.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/friends/friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/friends/friends.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/friends/friends.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/friends/friends.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/friends/friends.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/friends/friends.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/index/index.wxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -72,8 +59,8 @@
       <file leaf-file-name="db.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/model/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="396">
+              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -279,7 +266,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.9.3" />
-    <property name="last_opened_file_path" value="D:/duolamao/duolamao_yunying_web/yunying/vue-admin-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -318,7 +305,7 @@
       <option name="presentableId" value="Default" />
       <updated>1537936317776</updated>
       <workItem from="1537936319432" duration="20838000" />
-      <workItem from="1538009157410" duration="17753000" />
+      <workItem from="1538009157410" duration="18630000" />
     </task>
     <task id="LOCAL-00001" summary="server common methods">
       <created>1537939341120</created>
@@ -345,7 +332,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38591000" />
+    <option name="totallyTimeSpent" value="39468000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -358,6 +345,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1519" height="977" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16250843" />
@@ -610,8 +598,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/model/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="396">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
     </entry>
