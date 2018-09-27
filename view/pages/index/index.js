@@ -16,6 +16,12 @@ Page({
     listCount: 0
   },
   onLoad: function () {
+    
+    
+  },
+
+  onShow: function() {
+    // this.load()
     if (app.globalData.openid === '') {    // 无token
       app.loginReadyCallBack = res => {
         app.globalData.token = res
@@ -23,13 +29,48 @@ Page({
         // 多啦猫用户信息
         this.firstLoad()
       }
-    }else{
+    } else {
       console.log(app.globalData.openid)
       this.firstLoad()
     }
-    
   },
 
+  // load: function () {
+  //   app.wxrequest({
+  //     url: app.globalData.baseUrl + '/orderquery',
+  //     data: {
+  //       pagesize: 0,
+  //       pageno: 0,
+  //       openid: app.globalData.openid
+  //     },
+  //     success: res => {
+  //       var data = res.data.data.results
+  //       for (let i = 0; i < data.length; i++) {
+  //         data[i].which = Math.ceil(Math.random() * 10)
+  //       }
+
+  //       this.setData({
+  //         listData: []
+  //       })
+
+  //       this.setData({
+  //         listData: data
+  //       })
+  //       console.log(this.data.listData)
+  //       if (data.length > 0) {
+  //         this.render()
+
+  //         // 获取窗口高度
+  //         utils.tagSelector('.scrollView', size => {
+  //           this.setData({
+  //             scrollerHeight: size.height
+  //           })
+  //         })
+  //       }
+
+  //     }
+  //   })
+  // },
   firstLoad() {
     app.wxrequest({
       url: app.globalData.baseUrl + '/orderquery',
@@ -40,21 +81,24 @@ Page({
       },
       success: res => {
         var data = res.data.data.results
-        console.log(data)
         for(let i = 0 ;i < data.length; i ++) {
           data[i].which = Math.ceil(Math.random() * 10)
         }
         this.setData({
           listData: data
         })
-        this.render()
+        console.log(this.data.listData)
+        // if(data.length > 0) {
+        //   this.render()
 
-        // 获取窗口高度
-        utils.tagSelector('.scrollView', size => {
-          this.setData({
-            scrollerHeight: size.height
-          })
-        })
+        //   // 获取窗口高度
+        //   utils.tagSelector('.scrollView', size => {
+        //     this.setData({
+        //       scrollerHeight: size.height
+        //     })
+        //   })
+        // }
+        
       }
     })
     // wx.request({

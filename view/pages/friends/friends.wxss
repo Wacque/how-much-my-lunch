@@ -53,8 +53,8 @@
   flex: 1
 }
 .friends .item .avatar image{
-  width: 120rpx;
-  height: 120rpx;
+  width: 100rpx;
+  height: 100rpx;
   display: block;
   border-radius: 50%;
   border: 2px solid rgb(233,233,233)

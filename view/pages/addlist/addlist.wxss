@@ -91,7 +91,8 @@
 }
 .itemContainer .item .item_l image{
   width: 100rpx;
-  height: 100rpx
+  height: 100rpx;
+  border-radius: 50%;
 }
 .itemContainer .item .item_r {
   flex: 1;
@@ -160,6 +161,7 @@
   padding: 5rpx;
   box-shadow: 0 0 4rpx 2rpx rgb(233, 233, 233);
   margin-top: 30rpx;
+  overflow: hidden
 }
 .content .r .caculate {
   width: 100%;

@@ -6,6 +6,7 @@ module.exports = {
   c_user: 'user',
   c_order: 'order',
   c_friends: 'friends',
+  c_order_detail: 'orderDetail',
 
   // 小程序相关
   app_id: 'wx0b5acf0d8142d35a',

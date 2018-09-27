@@ -8,10 +8,11 @@ const errcode = require('../config/errcode')
 const defaultData = require('./common').defaultData
 
 // 建立user索引
-initDBIndex(config.c_user)
+initDBIndex(config.c_user, {'username': 1})
+initDBIndex(config.c_order, {'openid': 1})
 
 // 查找
-exports.find = (res, _collection, data, callback, pagesize = 0, pageno = 0) => {
+exports.find = (res, sort , _collection, data, callback, pagesize = 0, pageno = 0) => {
   __connectDB((err, client) => {
     var db = client.db(dbname)
     var collection = db.collection(_collection)
@@ -20,7 +21,7 @@ exports.find = (res, _collection, data, callback, pagesize = 0, pageno = 0) => {
         res.json(res.json(new defaultData(errcode.CODE_DATABASE_ERR.code, [], 0, errcode.CODE_DATABASE_ERR.msg)))
         return
       }
-      collection.find(data).limit(Number(pagesize)).skip(Number(pageno) * Number(pagesize)).toArray((err, doc) => {
+      collection.find(data).limit(Number(pagesize)).skip(Number(pageno) * Number(pagesize)).sort(sort).toArray((err, doc) => {
         if(err) {
           res.json(res.json(new defaultData(errcode.CODE_DATABASE_ERR.code, [], 0, errcode.CODE_DATABASE_ERR.msg)))
         }
@@ -84,15 +85,14 @@ function __connectDB(action) {
   })
 }
 
-function initDBIndex(collectionName) {
+function initDBIndex(collectionName, indexKey) {
   __connectDB((err, client) => {
     if(err) {
       throw err
     }else {
       var db = client.db(dbname)
       var collection = db.collection(collectionName)
-      collection.createIndex({
-        'username': 1}, null, (err, res) => {
+      collection.createIndex(indexKey, null, (err, res) => {
         if(err) {
           throw err
         }else {
