@@ -82,22 +82,28 @@ Page({
     // })
   },
   handleToucheMove(e) {
-    if (this.data.startX - e.touches[0].clientX > 50) {
-      var data = this.data.items
-      for (let i = 0; i < data.length; i++) {
-        data[i].active = false
+    // 当未完成计算且item长度大于1时，删除功能可用
+    // console.log(this.data.items[this.data.touchcurrent].inputdisabled)
+    if(!this.data.items[this.data.touchcurrent].inputdisabled && this.data.items.length > 1) {
+      if (this.data.startX - e.touches[0].clientX > 50) {
+        var data = this.data.items
+        for (let i = 0; i < data.length; i++) {
+          data[i].active = false
+        }
+        data[this.data.touchcurrent].active = true
+
+      } else if (this.data.startX - e.touches[0].clientX < 50) {
+        var data = this.data.items
+        for (let i = 0; i < data.length; i++) {
+          data[i].active = false
+        }
       }
-      data[this.data.touchcurrent].active = true
-      
-    } else if (this.data.startX - e.touches[0].clientX < 50) {
-      var data = this.data.items
-      for (let i = 0; i < data.length; i++) {
-        data[i].active = false
-      }
+
+      this.setData({
+        items: data
+      })
     }
-    this.setData({
-      items: data
-    })
+
   },
   showSide() {
     console.log('show')
@@ -164,7 +170,7 @@ Page({
     var items = this.data.items;
     var people = this.data.people;
     var operIndex = e.currentTarget.dataset.index;
-    
+
     for(let i = 0; i < people.length;i ++) {
       if (people[i]._id == items[operIndex]._id ) {
         people[i].peopleDisable = false;
@@ -206,6 +212,7 @@ Page({
 
     for (var j = 0; j < data.length; j++) {
       data[j].realPay = (data[j].value / sum * payed).toFixed(2)
+      data[j].inputdisabled = true
       // console.log(data[j].value + '=>' + (data[j].value / sum * payed).toFixed(2))
     }
 

@@ -8,7 +8,7 @@
 </view>
 <view bindtap='containerTab' class='container {{coverShow ? "blur" : ""}}'>
   <view class='content {{sideShow ? "sideShow" : ""}}'>
-    <scroll-view bindtap='hideSide' class='l {{sideShow ? "blur" : ""}}'>
+    <scroll-view scroll-y='true' bindtap='hideSide' class='l {{sideShow ? "blur" : ""}}'>
       <view wx:for='{{items}}' class='itemContainer '>
         <view 
           data-index='{{index}}' 
@@ -38,22 +38,25 @@
                   type='text' 
                   confirm-type='next' 
                   bindconfirm='showSide'
+                  disabled='{{item.inputdisabled}}'
                   value='{{item.value}}'  
                 ></input>
               </view>
 
             </view>
-            <view wx:if='{{item.realPay !== ""}}' class='caculateData flexCenter'>
+            <view wx:if='{{item.realPay !== ""}}' class='caculateData fontStyleBold font-6-24 backMain flexCenter'>
               {{item.realPay}}
             </view>
           </view>
-          <view class=' {{(item.complete && (index != items.length - 1)) ? "backMain" : ""}} item_arrow flexCenter'>
-            <text 
-              class='ok' 
-              catchtap='showSide' 
-              wx:if='{{item.complete && index == items.length - 1}}'
-            >ok</text>
 
+          <view class=' {{(item.complete && index !== items.length - 1) || item.inputdisabled  ? "backMain" : ""}} item_arrow flexCenter'>
+            <text
+              style="padding: 0 5rpx"
+              class='ok colorMain'
+              catchtap='showSide'
+              wx:if='{{item.complete && index == items.length - 1 && !item.inputdisabled}}'
+            >next</text>
+            <!--{{(index == items.length - 1) && !item.inputdisabled}}-->
           </view>
         </view>
         <view catchtap='delete' data-index='{{index}}' class='deleteButton'>
@@ -64,7 +67,6 @@
     </scroll-view>
     <scroll-view class='r ' scroll-y='true'>
       <view bindtap='showCover' class='caculate font-6-14 fontStyleBold flexCenter backMain'>计算</view>
-
       <image 
         bindtap='addAFriend' 
         class='{{item.peopleDisable ? "peopleDisable" : ""}}' 
@@ -73,7 +75,6 @@
         src='{{item.friendAvatar}}' 
         mode='widthFix'
       ></image>
-      
     </scroll-view>
   </view>
 </view>

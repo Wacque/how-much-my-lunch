@@ -7,7 +7,6 @@
 </view>
 <view class='friends' wx:if='{{friends && friends.length > 0}}'>
   <view class='content '>
-  
     <view bindtap='showCover' class='flexCenter item'>
       <text   class='iconfont icon-plus colorMain font-6-20'></text>
     </view>

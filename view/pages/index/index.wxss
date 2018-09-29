@@ -92,14 +92,14 @@
   line-height: 130%
 }
 .itemContent .itemImgBox {
-  display: flex
+  /*display: flex*/
 }
 .itemContent .itemImgBox image{
-  display: block;
+  display: inline-block;
   width: 60rpx;
   height: 60rpx;
   border-radius: 50%;
-  margin-right:20rpx;
+  margin:5rpx 8rpx;
   border: 4rpx solid white;
 }
 .plusBar{

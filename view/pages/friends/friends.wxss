@@ -12,7 +12,7 @@
   text-align: center
 }
 .firstFriendContainer .button-hover {
-  color:whoite;
+  color: white;
   background-color:white;
 }
 .firstFriendContainer button{
@@ -80,3 +80,4 @@
  from {opacity: 0}
  to {opacity: 1}
 }
+

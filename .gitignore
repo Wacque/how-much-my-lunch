@@ -3,3 +3,8 @@ node_modules/
 npm-debug.log
 .editorconfig
 dist/
+delecss.js
+listener.js
+*.css
+*.styl
+view/source/
