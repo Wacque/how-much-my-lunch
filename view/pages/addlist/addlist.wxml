@@ -1,10 +1,10 @@
 <!--pages/addlist/addlist.wxml-->
 <import src="../../template/tip/tip.wxml" />
 <template is='tip' data='{{...item}}' />
-<view class='cover flexCenter' wx:if='{{coverShow}}'>
+<view bindtap='hideCover' class='cover flexCenter' wx:if='{{coverShow}}'>
   <view class='coverContent'>
     <view>
-      <input type='text' bindconfirm='caculate' bindinput='caculateInput' value='payed' class='font-6-33  fontStyleBold' placeholder='总共付了多少钱？' auto-focus='true'></input>
+      <input catchtap='catchCoverInput' type='text' bindconfirm='caculate' bindinput='caculateInput' value='{{payed}}' class='font-6-33  fontStyleBold' placeholder='总共付了多少钱？' auto-focus='true'></input>
     </view>
   </view>
 </view>
@@ -53,12 +53,13 @@
           </view>
 
           <view class=' {{(item.complete && index !== items.length - 1) || item.inputdisabled  ? "backMain" : ""}} item_arrow flexCenter'>
-            <text
+            <view
               style="padding: 0 5rpx"
               class='ok colorMain'
+              data-index='{{index}}'
               catchtap='showSide'
               wx:if='{{item.complete && index == items.length - 1 && !item.inputdisabled}}'
-            >next</text>
+            >next</view>
             <!--{{(index == items.length - 1) && !item.inputdisabled}}-->
           </view>
         </view>

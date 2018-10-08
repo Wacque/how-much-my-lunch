@@ -214,6 +214,16 @@ Page({
       sideShow: false
     })
   },
+  hideCover() {
+    this.setData({
+      coverShow: false,
+      sideShow: true
+    })
+  },
+  //勿删！！ 用于捕获点击事件阻止向父级的hideCover事件传递
+  catchCoverInput() {
+
+  },
   // 输入的总金额
   caculateInput(e) {
     this.setData({
