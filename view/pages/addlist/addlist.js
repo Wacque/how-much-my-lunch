@@ -1,9 +1,11 @@
 // pages/addlist/addlist.js
+
+const app = getApp()
+const utils = require('../../utils/util.js')
+
 const itemDefautObj = {         // 默认数据
   active: false, complete: false, value: '', realPay: ''
 }
-
-const app = getApp()
 
 Page({
 
@@ -22,7 +24,7 @@ Page({
     startX: 0,
     touchcurrent: 0,      // 当前操作的
     coverShow: false,
-    payed: 0
+    payed: ''
   },
 
   /**
@@ -105,15 +107,29 @@ Page({
     }
 
   },
-  showSide() {
-    console.log('show')
+  showSide(e) {
+    console.log(e.currentTarget.dataset.index)
+    console.log(this.data.items[e.currentTarget.dataset.index])
+    var currentVal = this.data.items[e.currentTarget.dataset.index].value
+    console.log(currentVal)
+    if (currentVal === '' || !/^[0-9]+$/g.test(currentVal)) {
+      utils.showtip(this, '好好填！数字！', _ => {
+      }, 800)
+
+      let items = this.data.items
+      items[e.currentTarget.dataset.index].value = ''
+      this.setData({
+        items: items
+      })
+
+      return
+    }
     this.setData({
       sideShow: true
     })
   },
   hideSide() {
     if (this.data.sideShow) {       // 只有当侧边栏状态为true
-      console.log('hide')
       this.setData({
         sideShow: false
       })
@@ -131,11 +147,22 @@ Page({
       items: data
     })
   },
+  
+  // 单个价格输入
+  textInput(e) {
+    let items = this.data.items
+    items[e.currentTarget.dataset.index].value = e.detail.value
+    this.setData({
+      items: items
+    })
+  },
 
   textBlur(e) {
     var data = this.data.items
-    console.log(e)
-    if(e.detail.value === '') {
+    // 不能为空且为数字
+    if (e.detail.value === '' || !/^[0-9]+$/g.test(e.detail.value)) {
+      utils.showtip(this, '好好填！数字！', _ => {
+      }, 800)
       data[e.currentTarget.dataset.index].complete = false
     }else {
       data[e.currentTarget.dataset.index].complete = true
@@ -200,8 +227,16 @@ Page({
   },
   // 计算
   caculate() {
-    console.log(this.data.items)
     var payed = this.data.payed
+    if (payed === '' || !/^[0-9]+$/g.test(payed)) {
+      utils.showtip(this, '好好填！数字！', _ => {
+      }, 800)
+
+      this.setData({
+        payed: ''
+      })
+      return
+    }
     var data = this.data.items
     var sum = 0;
     if (data.length > 0) {

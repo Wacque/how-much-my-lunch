@@ -59,7 +59,9 @@
   position: fixed;
   height: 0;
   bottom: 240rpx;
-  width: 100%;
+  left: 0;
+  right: 0;
+  /* width: 100%; */
   transition: all 0.6s;
   text-align: center;
   z-index: 9999;

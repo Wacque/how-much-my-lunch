@@ -27,7 +27,7 @@
   transition: all 0.3s;
   transition-delay: 0.3s;
 }
-.content{
+.container .content{
   width: 900rpx;
   height: 100vh;
   display: flex;
@@ -179,7 +179,7 @@
 }
 /* 打开侧边栏 */
 .sideShow {
-  left: -150rpx
+  left: -150rpx!important
 }
 
 /* 打开侧边栏左侧 */

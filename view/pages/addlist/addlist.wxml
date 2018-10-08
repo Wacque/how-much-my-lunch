@@ -1,8 +1,10 @@
 <!--pages/addlist/addlist.wxml-->
+<import src="../../template/tip/tip.wxml" />
+<template is='tip' data='{{...item}}' />
 <view class='cover flexCenter' wx:if='{{coverShow}}'>
   <view class='coverContent'>
     <view>
-      <input type='text' bindconfirm='caculate' bindinput='caculateInput' class='font-6-33  fontStyleBold' placeholder='总共付了多少钱？' auto-focus='true'></input>
+      <input type='text' bindconfirm='caculate' bindinput='caculateInput' value='payed' class='font-6-33  fontStyleBold' placeholder='总共付了多少钱？' auto-focus='true'></input>
     </view>
   </view>
 </view>
@@ -32,6 +34,7 @@
                 <input 
                   placeholder='{{item.friendName}}多少钱' 
                   bindblur='textBlur' 
+                  bindinput='textInput'
                   data-index='{{index}}' 
                   auto-focus='true' 
                   class='font-6-18 fontStyleItalic fontStyleBold' 

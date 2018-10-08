@@ -9,9 +9,9 @@
 </view>
 
 <!-- 非首次添加按钮 -->
-<view wx:if='{{listData && listData.length > 0}}' class='plusBar backMain {{plusbarShow ? "barShowAni" : ""}}'>
+<view bindtap='addlist' wx:if='{{listData && listData.length > 0}}' class='plusBar backMain {{plusbarShow ? "barShowAni" : ""}}'>
 
-  <text bindtap='addlist' class='iconfont icon-plus font-6-20'></text>
+  <text  class='iconfont icon-plus font-6-20'></text>
 </view>
 <scroll-view wx:if='{{listData && listData.length > 0}}' bindscrolltolower="lower" bindscrolltoupper="upper" class='scrollView' bindscroll='scroller' scroll-y='true'>
   <view wx:for='{{listData}}' class='trans transItem left1px transActive'>
