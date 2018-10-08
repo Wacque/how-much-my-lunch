@@ -126,6 +126,18 @@ Page({
     })
   },
 
+  hideCover: function(e) {
+    this.setData({
+      coverShow: false,
+      name: ''
+    })
+  },
+
+  //勿删！！ 用于捕获点击事件阻止向父级的hideCover事件传递
+  catchtapText() {
+    console.log('catch')
+  },
+
   friendInput: function(e) {
     this.setData({
       name: e.detail.value

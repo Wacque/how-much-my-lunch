@@ -20,10 +20,10 @@
     </view>
   </view>
 </view>
-<view class='cover flexCenter' wx:if='{{coverShow}}'>
+<view bindtap='hideCover' class='cover flexCenter' wx:if='{{coverShow}}'>
   <view class='coverContent'>
     <view>
-      <input type='text' bindconfirm='addConfirm' bindinput='friendInput' class='font-6-33  fontStyleBold' placeholder='新朋友的名字？' auto-focus='true'></input>
+      <input catchtap='catchtapText' type='text' bindconfirm='addConfirm' bindinput='friendInput' class='font-6-33  fontStyleBold' placeholder='新朋友的名字？' auto-focus='true'></input>
     </view>
   </view>
 </view>

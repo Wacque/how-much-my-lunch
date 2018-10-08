@@ -43,7 +43,6 @@ Page({
         openid: app.globalData.openid
       },
       success: res => {
-        console.log(res)
         var res = res.data.data.results
         for (let i = 0; i < res.length; i++) {
           if(i === 0) {
@@ -108,10 +107,7 @@ Page({
 
   },
   showSide(e) {
-    console.log(e.currentTarget.dataset.index)
-    console.log(this.data.items[e.currentTarget.dataset.index])
     var currentVal = this.data.items[e.currentTarget.dataset.index].value
-    console.log(currentVal)
     if (currentVal === '' || !/^[0-9]+$/g.test(currentVal)) {
       utils.showtip(this, '好好填！数字！', _ => {
       }, 800)
@@ -176,7 +172,6 @@ Page({
 
   // 添加一个朋友
   addAFriend(e) {
-    console.log(e)
     var items = this.data.items;
     var people = this.data.people;
     if (!people[e.currentTarget.dataset.index].peopleDisable) {      // 当人物peopleDisable为false
@@ -248,7 +243,6 @@ Page({
     for (var j = 0; j < data.length; j++) {
       data[j].realPay = (data[j].value / sum * payed).toFixed(2)
       data[j].inputdisabled = true
-      // console.log(data[j].value + '=>' + (data[j].value / sum * payed).toFixed(2))
     }
 
     this.setData({
@@ -269,7 +263,7 @@ Page({
 
       detail.push(obj)
     }
-    console.log(detail)
+
     app.wxrequest({
       url: app.globalData.baseUrl + '/insertOrder',
       data: {
@@ -277,7 +271,6 @@ Page({
         detail: JSON.stringify(detail),
       },
       success: res => {
-        console.log(res)
       }
     })
   },
