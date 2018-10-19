@@ -2,93 +2,147 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c0bdec2-d250-49aa-abe6-aeb4e301a72b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/view/app.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/pages/addlist/addlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/addlist/addlist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/pages/addlist/addlist.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/addlist/addlist.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/pages/addlist/addlist.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/addlist/addlist.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/friends/friends.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/friends/friends.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/friends/friends.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/friends/friends.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/index/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/download.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/font_pibmc0fkgym/demo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/font_pibmc0fkgym/demo_fontclass.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/font_pibmc0fkgym/demo_symbol.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/font_pibmc0fkgym/demo_unicode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/font_pibmc0fkgym/iconfont.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/font_pibmc0fkgym/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/font_pibmc0fkgym/iconfont.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/font_pibmc0fkgym/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/font_pibmc0fkgym/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/font_pibmc0fkgym/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/transfonter.org-20180912-061233.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/transfonter.org-20180912-061233/demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/transfonter.org-20180912-061233/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/source/transfonter.org-20180912-061233/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/pages/friends/friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/friends/friends.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/utils/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/utils/util.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1407279344">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="5" />
+          <entry key="json" value="3" />
+          <entry key="wxml" value="1" />
+          <entry key="wxss" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="1" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="111" />
+          <entry key="wxml" value="16" />
+          <entry key="wxss" value="43" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="43" />
+          <entry key="HTML" value="16" />
+          <entry key="JavaScript" value="111" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="addlist.wxml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.wxml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/pages/friends/friends.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-              <folding>
-                <element signature="n#scroll-view#0;n#view#0;n#view#1;n#!!top" />
-                <element signature="n#style#0;n#text#0;n#view#2;n#view#0;n#view#0;n#scroll-view#0;n#view#0;n#view#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="-2196">
+              <caret line="73" column="37" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.wxss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/pages/index/index.wxss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="101" column="15" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addlist.wxss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.wxss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="40" column="15" lean-forward="true" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.wxss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/app.wxss">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.json">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="util.wxss" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/pages/index/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="65" column="95" selection-start-line="65" selection-start-column="95" selection-end-line="65" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/utils/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1650">
+              <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/listener.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.wxss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/pages/index/index.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/utils/util.wxss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="748">
               <caret line="34" column="10" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addlist.js" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="107" column="10" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="10" />
+            <state relative-caret-position="6204">
+              <caret line="282" column="23" lean-forward="true" selection-start-line="282" selection-start-column="23" selection-end-line="282" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -112,6 +166,7 @@
       <find>item_arrow</find>
       <find>itemimage</find>
       <find>caculateData</find>
+      <find>delete</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,10 +178,8 @@
         <option value="$PROJECT_DIR$/view/assets/css/iconfont.wxss" />
         <option value="$PROJECT_DIR$/server/model/httpRequest.js" />
         <option value="$PROJECT_DIR$/server/model/httpsRequest.js" />
-        <option value="$PROJECT_DIR$/view/pages/index/index.js" />
         <option value="$PROJECT_DIR$/server/model/common.js" />
         <option value="$PROJECT_DIR$/server/config/errcode.js" />
-        <option value="$PROJECT_DIR$/view/pages/friends/friends.js" />
         <option value="$PROJECT_DIR$/server/package.json" />
         <option value="$PROJECT_DIR$/server/config/index.js" />
         <option value="$PROJECT_DIR$/view/app.js" />
@@ -140,10 +193,14 @@
         <option value="$PROJECT_DIR$/view/pages/addlist/addlist.styl" />
         <option value="$PROJECT_DIR$/view/test.styl" />
         <option value="$PROJECT_DIR$/view/test.css" />
-        <option value="$PROJECT_DIR$/view/pages/addlist/addlist.js" />
-        <option value="$PROJECT_DIR$/view/pages/addlist/addlist.wxss" />
         <option value="$PROJECT_DIR$/view/pages/index/index.wxss" />
+        <option value="$PROJECT_DIR$/view/utils/util.js" />
+        <option value="$PROJECT_DIR$/view/listener.js" />
+        <option value="$PROJECT_DIR$/view/pages/addlist/addlist.js" />
+        <option value="$PROJECT_DIR$/view/pages/friends/friends.js" />
+        <option value="$PROJECT_DIR$/view/pages/index/index.js" />
         <option value="$PROJECT_DIR$/view/pages/addlist/addlist.wxml" />
+        <option value="$PROJECT_DIR$/view/pages/addlist/addlist.wxss" />
       </list>
     </option>
   </component>
@@ -158,51 +215,75 @@
       <path value="$PROJECT_DIR$/server/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="width" value="1149" />
-    <option name="height" value="1455" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="meat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meat" type="462c0819:PsiDirectoryNode" />
+              <item name="how-much-my-lunch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="how-much-my-lunch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="meat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meat" type="462c0819:PsiDirectoryNode" />
+              <item name="how-much-my-lunch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="how-much-my-lunch" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how-much-my-lunch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="how-much-my-lunch" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="meat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meat" type="462c0819:PsiDirectoryNode" />
+              <item name="how-much-my-lunch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="how-much-my-lunch" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how-much-my-lunch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="how-much-my-lunch" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="meat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meat" type="462c0819:PsiDirectoryNode" />
+              <item name="how-much-my-lunch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="how-much-my-lunch" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="addlist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="meat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meat" type="462c0819:PsiDirectoryNode" />
+              <item name="how-much-my-lunch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="how-much-my-lunch" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="friends" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how-much-my-lunch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="how-much-my-lunch" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="meat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meat" type="462c0819:PsiDirectoryNode" />
+              <item name="how-much-my-lunch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="how-much-my-lunch" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="how-much-my-lunch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="how-much-my-lunch" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -210,13 +291,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.9.3" />
-    <property name="last_opened_file_path" value="D:/duolamao/duolamao_official_website" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -261,6 +341,8 @@
       <workItem from="1538052411941" duration="1323000" />
       <workItem from="1538096740696" duration="6202000" />
       <workItem from="1538146064914" duration="6116000" />
+      <workItem from="1539766090096" duration="2968000" />
+      <workItem from="1539874686429" duration="3221000" />
     </task>
     <task id="LOCAL-00001" summary="server common methods">
       <created>1537939341120</created>
@@ -287,7 +369,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53109000" />
+    <option name="totallyTimeSpent" value="59298000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -299,26 +381,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1519" height="977" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16250843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2112788" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32893157" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49696562" weight="0.3297619" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297619" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.5023601" side_tool="true" visible="true" weight="0.32619047" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32893157" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49696562" weight="0.3297619" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49763992" visible="true" weight="0.32619047" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49563146" weight="0.23013699" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50436854" side_tool="true" weight="0.23013699" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,124 +417,7 @@
     <MESSAGE value="fileUploader" />
     <option name="LAST_COMMIT_MESSAGE" value="fileUploader" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="4" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/model/httpsRequest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="90" column="14" lean-forward="true" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/friends/friends.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/model/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/model/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/config/errcode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/model/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/index/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/model/httpsRequest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/friends/friends.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/model/fileUploader.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -459,27 +425,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/_formidable@1.2.1@formidable/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/_formidable@1.2.1@formidable/lib/index.js" />
     <entry file="file://$PROJECT_DIR$/view/assets/css/iconfont.wxss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/utils/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1518" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/index/index.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/model/common.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -492,13 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/index/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -526,20 +471,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="90" column="14" lean-forward="true" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/_moment@2.22.2@moment/moment.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2530">
-          <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/node_modules/_moment@2.22.2@moment/moment.d.ts" />
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -561,33 +493,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/8.9.3/core-modules/path.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delecss.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/friends/friends.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/friends/friends.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/8.9.3/core-modules/path.js" />
+    <entry file="file://$PROJECT_DIR$/delecss.js" />
     <entry file="file://$PROJECT_DIR$/view/pages/friends/friends.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/friends/friends.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -598,72 +509,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/listener.js">
+    <entry file="file://$PROJECT_DIR$/listener.js" />
+    <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.styl" />
+    <entry file="file://$PROJECT_DIR$/view/test.styl" />
+    <entry file="file://$PROJECT_DIR$/view/pages/test.wxss" />
+    <entry file="file://$PROJECT_DIR$/view/test.css" />
+    <entry file="file://$PROJECT_DIR$/view/pages/index/index.wxss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/test.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/test.wxss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/test.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="107" column="10" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="10" />
+        <state relative-caret-position="2222">
+          <caret line="101" column="15" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/app.wxss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/view/pages/friends/friends.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/pages/friends/friends.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="90" column="14" lean-forward="true" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/utils/util.wxss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="748">
           <caret line="34" column="10" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/index/index.wxss">
+    <entry file="file://$PROJECT_DIR$/view/listener.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="101" column="15" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
+        <state relative-caret-position="440">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.wxss">
+    <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="40" column="15" lean-forward="true" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        <state relative-caret-position="6204">
+          <caret line="282" column="23" lean-forward="true" selection-start-line="282" selection-start-column="23" selection-end-line="282" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/pages/friends/friends.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2196">
+          <caret line="73" column="37" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/utils/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/pages/index/index.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/pages/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.wxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="n#scroll-view#0;n#view#0;n#view#1;n#!!top" />
-            <element signature="n#style#0;n#text#0;n#view#2;n#view#0;n#view#0;n#scroll-view#0;n#view#0;n#view#1;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="506">
+          <caret line="65" column="95" selection-start-line="65" selection-start-column="95" selection-end-line="65" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/pages/addlist/addlist.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
         </state>
       </provider>
     </entry>

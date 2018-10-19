@@ -63,7 +63,7 @@
             <!--{{(index == items.length - 1) && !item.inputdisabled}}-->
           </view>
         </view>
-        <view catchtap='delete' data-index='{{index}}' class='deleteButton'>
+        <view catchtap='delete' data-index='{{index}}' class='deleteButton flexCenter font-6-13'>
           删除
         </view>
       </view>

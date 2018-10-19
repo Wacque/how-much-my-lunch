@@ -104,8 +104,8 @@ Page({
         items: data
       })
     }
-
   },
+
   showSide(e) {
     var currentVal = this.data.items[e.currentTarget.dataset.index].value
     if (currentVal === '' || !/^[0-9]+$/g.test(currentVal)) {
@@ -124,6 +124,7 @@ Page({
       sideShow: true
     })
   },
+
   hideSide() {
     if (this.data.sideShow) {       // 只有当侧边栏状态为true
       this.setData({
@@ -184,7 +185,6 @@ Page({
         people: people
       })
     }
-    
   },
 
   // 删除

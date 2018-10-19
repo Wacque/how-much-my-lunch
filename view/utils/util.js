@@ -5,7 +5,6 @@ const formatTime = date => {
   const hour = date.getHours()
   const minute = date.getMinutes()
   const second = date.getSeconds()
-
   return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
 
@@ -69,16 +68,12 @@ const showtip = (_this, textcontent, callback, interval) => {
             canshow: true
           }
         })
-
         if (callback) {
           callback()
         }
       }, 500)
-
-     
     }, interval ? interval : 2000)
   }, 200)
-
 }
 
 module.exports = {

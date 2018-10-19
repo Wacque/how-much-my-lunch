@@ -48,11 +48,13 @@ Page({
       friends: friends
     })
   },
+
   addConfirm: function() {
     if(this.data.name !== '') {
       this.addFriend()
     }
   },
+
   // addFriend
   addFriend: function (myName, myAvatar) {
     var that = this

@@ -16,8 +16,7 @@ Page({
     listCount: 0
   },
   onLoad: function () {
-    
-    
+
   },
 
   onShow: function() {
