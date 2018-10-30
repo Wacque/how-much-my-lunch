@@ -1,4 +1,3 @@
-
 //app.js
 App({
   onLaunch: function () {
@@ -11,16 +10,18 @@ App({
       success: (res) => {
         that.wxrequest({
           retry: that.login,
-          url: that.globalData.baseUrl + '/login',
+          url: that.globalData.baseUrl + '/index/auth/login',
           data: {
             code: res.code
           },
           success: function (res) {
-            if (res.data.resultcode === 0) {
+            console.log(res)
+;            if (res.data.resultcode === 0) {
+  
               that.globalData.openid = res.data.data.results[0].openid
               that.getUserInfo()
 
-            }else {
+            } else {
               wx.showModal({
                 title: '错误',
                 data: res.msg
@@ -37,10 +38,10 @@ App({
   loginReadyCallBack: function (res) {
     return res
   },
-  getUserInfo: function() {
+  getUserInfo: function () {
     var that = this
     this.wxrequest({
-      url: that.globalData.baseUrl + '/getUserMes',
+      url: that.globalData.baseUrl + '/index/auth/getUserMes',
       data: {
         openid: that.globalData.openid
       },
@@ -52,13 +53,13 @@ App({
       }
     })
   },
-  getUserMesCallback: function(res) {
+  getUserMesCallback: function (res) {
     return res
   },
   wxrequest: function (params) {
     var that = this
     wx.request({
-      url: params.url ,
+      url: params.url,
       method: 'POST',
       header: { "Content-Type": "application/x-www-form-urlencoded" },
       data: params.data,
@@ -75,7 +76,7 @@ App({
           }
           // }
 
-        }else {
+        } else {
           // if(res.data.resultcode == 0) {
           params.success(res)
           // }
@@ -86,7 +87,8 @@ App({
   },
   globalData: {
     userInfo: null,
-    baseUrl: 'https://api.wuacque.cn',
+    baseUrl: 'http://192.168.1.108:8888',
+    // baseUrl: 'https://api.wuacque.cn',
     // baseUrl: 'http://192.168.1.27:3001',
     openid: ''
   }

@@ -38,7 +38,7 @@ Page({
   queryFriend: function () {
     var that = this
     app.wxrequest({
-      url: app.globalData.baseUrl + '/queryFriend',
+      url: app.globalData.baseUrl + '/index/friend/queryFriend',
       data: {
         openid: app.globalData.openid
       },
@@ -51,8 +51,8 @@ Page({
             res[i].peopleDisable = false
           }
           
-          if (!isNaN(parseInt(res[i].friendAvatar))) {         // 判断friendAvatar为数字
-            res[i].friendAvatar = `../../assets/image/animal/a${res[i].friendAvatar}.png`
+          if (!isNaN(parseInt(res[i].friend_avatar))) {         // 判断friendAvatar为数字
+            res[i].friend_avatar = `../../assets/image/animal/a${res[i].friend_avatar}.png`
           }
         }
 
@@ -265,17 +265,15 @@ Page({
     var detail = []
     for(let i = 0; i < data.length; i++) {
       var obj = {}
-      obj.name = data[i].friendName
-      obj.avatar = data[i].friendAvatar
+      obj.friend_id = data[i].id
       obj.price = data[i].realPay * 100
-      obj.orprice = data[i].value * 100
-      obj._openid = app.globalData.openid
-
+      obj.origin_price = data[i].value * 100
       detail.push(obj)
     }
 
+    console.log(detail);
     app.wxrequest({
-      url: app.globalData.baseUrl + '/insertOrder',
+      url: app.globalData.baseUrl + '/index/order/addOrder',
       data: {
         openid: app.globalData.openid,
         detail: JSON.stringify(detail),

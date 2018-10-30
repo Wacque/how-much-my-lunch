@@ -20,7 +20,7 @@
           class='item {{item.active ? "deleTransition" : " "}}'
         >
           <view class='item_l flexCenter'>
-              <image src='{{item.friendAvatar}}' mode='widthFix'></image>
+              <image src='{{item.friend_avatar}}' mode='widthFix'></image>
           </view>
           <view class='item_r flexCenter'>
             <view class='before_caculateData'>
@@ -28,11 +28,11 @@
                 wx:if='{{item.complete}}' 
                 class='font-6-14 flexCenter name row fontStyleItalic {{item.complete ? "nameShow" : ""}}'
               >
-                {{item.friendName}}
+                {{item.friend_name}}
               </view>
               <view class='row flexCenter'>
                 <input 
-                  placeholder='{{item.friendName}}多少钱' 
+                  placeholder='{{item.friend_name}}多少钱' 
                   bindblur='textBlur' 
                   bindinput='textInput'
                   data-index='{{index}}' 
@@ -76,7 +76,7 @@
         class='{{item.peopleDisable ? "peopleDisable" : ""}}' 
         data-index='{{index}}' 
         wx:for='{{people}}' 
-        src='{{item.friendAvatar}}' 
+        src='{{item.friend_avatar}}' 
         mode='widthFix'
       ></image>
     </scroll-view>

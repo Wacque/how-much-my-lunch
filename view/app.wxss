@@ -1,4 +1,4 @@
-      /**app.wxss**/
+/**app.wxss**/
       @import './assets/css/iconfont.wxss';
       @import './utils/util.wxss';
       @import './assets/css/font.wxss';
@@ -8,5 +8,3 @@
         height: 0;
         color: transparent;
       }
-
-

@@ -72,7 +72,7 @@ Page({
   // },
   firstLoad() {
     app.wxrequest({
-      url: app.globalData.baseUrl + '/orderquery',
+      url: app.globalData.baseUrl + '/index/order/orderquery',
       data: {
         pagesize: 0,
         pageno: 0,
@@ -82,6 +82,11 @@ Page({
         var data = res.data.data.results
         for(let i = 0 ;i < data.length; i ++) {
           data[i].which = Math.ceil(Math.random() * 10)
+          for(let j = 0; j < data[i]['details'].length; j ++) {
+            if (!isNaN(Number(data[i]['details'][j]['friend_avatar']))) {
+              data[i]['details'][j]['friend_avatar'] = `../../assets/image/animal/a${data[i]['details'][j]['friend_avatar']}.png`
+            }
+          }
         }
         this.setData({
           listData: data

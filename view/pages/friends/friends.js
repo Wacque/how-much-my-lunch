@@ -18,11 +18,11 @@ Page({
     // nickName: fields.nickName, avatar: fields.avatarUrl, gender: fields.gender
     var that = this
     app.wxrequest({
-      url: app.globalData.baseUrl + '/setusermes',
+      url: app.globalData.baseUrl + '/index/auth/updateUser',
       data: {
         openid: app.globalData.openid,
         avatar: e.detail.userInfo.avatarUrl,
-        nickName: e.detail.userInfo.nickName,
+        nickname: e.detail.userInfo.nickName,
         gender: e.detail.userInfo.gender
       },
       success: res => {
@@ -40,8 +40,8 @@ Page({
     }
     
     friends.unshift({
-      friendAvatar: avatar,
-      friendName: name
+      friend_avatar: avatar,
+      friend_name: name
     })
 
     this.setData({
@@ -69,11 +69,11 @@ Page({
       avatar = avatarArr[Math.ceil(Math.random() * 19)]
     }
     app.wxrequest({
-      url: app.globalData.baseUrl + '/addFriend',
+      url: app.globalData.baseUrl + '/index/friend/addFriend',
       data: {
         openid: app.globalData.openid,
-        name: name,
-        avatar: avatar
+        friend_name: name,
+        friend_avatar: avatar
       },
       success: res => {
         if (res.data.resultcode === 0) {
@@ -91,15 +91,16 @@ Page({
   queryFriend: function() {
     var that = this
     app.wxrequest({
-      url: app.globalData.baseUrl + '/queryFriend',
+      url: app.globalData.baseUrl + '/index/friend/queryFriend',
       data: {
         openid: app.globalData.openid
       },
       success: res => {
+        console.log(res);
         var res = res.data.data.results
         for(let i = 0; i < res.length; i ++) {
-          if (!isNaN(parseInt(res[i].friendAvatar))) {         // 判断avatar为数字
-            res[i].friendAvatar = `../../assets/image/animal/a${res[i].friendAvatar}.png`
+          if (!isNaN(parseInt(res[i].friend_avatar))) {         // 判断avatar为数字
+            res[i].friend_avatar = `../../assets/image/animal/a${res[i].friend_avatar}.png`
           } 
         }
         that.setData({
