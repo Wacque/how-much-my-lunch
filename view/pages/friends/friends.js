@@ -93,7 +93,8 @@ Page({
     app.wxrequest({
       url: app.globalData.baseUrl + '/index/friend/queryFriend',
       data: {
-        openid: app.globalData.openid
+        openid: app.globalData.openid,
+        ifSort: true
       },
       success: res => {
         console.log(res);
@@ -111,16 +112,10 @@ Page({
   },
 
   onLoad: function (options) {
-    var arr = []
-    if(!app.globalData.userInfo) {
-      app.getUserMesCallback = res => {
-        
-      }
-    }else {
-      
-    }
-    this.queryFriend()
+    
   },
+
+  
 
   showCover: function() {
     this.setData({
@@ -158,7 +153,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    var arr = []
+    if (!app.globalData.userInfo) {
+      app.getUserMesCallback = res => {
+
+      }
+    } else {
+
+    }
+    this.queryFriend()
   },
 
   /**

@@ -47,12 +47,28 @@
   border-radius: 10rpx 
 }
 .friends .item .avatar {
-  flex: 0 0 200rpx
+  flex: 0 0 200rpx;
+  position: relative;
 }
-.friends .item .name{
+.friends .item .avatar .crown{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -35rpx;
+  width: 80rpx;
+  margin: auto;
+}
+.friends .item .text{
+  flex: 1;
+  display: flex;
+}
+.friends .item .text .name{
   flex: 1
 }
-.friends .item .avatar image{
+.friends .item .text .time{
+  flex: 0 0 100rpx;
+}
+.friends .item .avatar .avatarIcon{
   width: 100rpx;
   height: 100rpx;
   display: block;

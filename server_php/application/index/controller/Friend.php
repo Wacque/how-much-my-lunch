@@ -42,11 +42,30 @@ class Friend extends Controller
    public function queryFriend() {
        $openid = input('openid');
        $userid = tokenCheck($openid);
-       $res = Db::name('friends')
-           ->field('id,friend_name,friend_avatar')
-           ->where('refer_to', $userid)
+       $sort = input('ifSort');
 
-           ->select();
+       // 判断是否排序
+       if($sort) {
+            $res = Db::name('friends')
+                ->query('SELECT
+                                COUNT( mo.id ) AS count,
+                                friend_avatar,
+                                friend_name,
+                                mf.id 
+                            FROM
+                                meat_friends AS mf 
+                                LEFT JOIN meat_order_detail AS mo ON mo.friend_id = mf.id
+                            GROUP BY
+                                mf.id 
+                            ORDER BY
+                                COUNT( mo.id ) DESC');
+       }else {
+           $res = Db::name('friends')
+               ->field('id,friend_name,friend_avatar')
+               ->where('refer_to', $userid)
+               ->select();
+       }
+
        if(!$res) {
          $res = [];
        }

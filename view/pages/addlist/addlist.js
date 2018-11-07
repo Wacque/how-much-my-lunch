@@ -109,7 +109,7 @@ Page({
   showSide(e) {
     var currentVal = this.data.items[e.currentTarget.dataset.index].value
     if (currentVal === '' || !/^[0-9]+$/g.test(currentVal)) {
-      utils.showtip(this, '好好填！数字！', _ => {
+      utils.showtip(this, '数字！', _ => {
       }, 800)
 
       let items = this.data.items
@@ -158,7 +158,7 @@ Page({
     var data = this.data.items
     // 不能为空且为数字
     if (e.detail.value === '' || !/^[0-9]+$/g.test(e.detail.value)) {
-      utils.showtip(this, '好好填！数字！', _ => {
+      utils.showtip(this, '数字！', _ => {
       }, 800)
       data[e.currentTarget.dataset.index].complete = false
     }else {
@@ -234,7 +234,7 @@ Page({
   caculate() {
     var payed = this.data.payed
     if (payed === '' || !/^[0-9]+$/g.test(payed)) {
-      utils.showtip(this, '好好填！数字！', _ => {
+      utils.showtip(this, '数字！', _ => {
       }, 800)
 
       this.setData({

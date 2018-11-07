@@ -13,10 +13,12 @@
     </view>
     <view  wx:for="{{friends}}" class='item flexCenter'>
       <view class='avatar flexCenter'>
-        <image src='{{item.friend_avatar}}' mode='widthFix'></image>
+        <image class='crown' mode='widthFix' src='../../assets/image/crown.png' wx:if='{{index==1}}'></image>
+        <image class='avatarIcon' src='{{item.friend_avatar}}' mode='widthFix'></image>
       </view>
-      <view class='name fontStyleItalic'>
-        {{item.friend_name}}
+      <view class='text fontStyleItalic'>
+        <view class='name'> {{item.friend_name}}</view>
+        <view class='time colorMain' wx:if='{{item.count !== 0}}' >+{{item.count}}</view>
       </view>
     </view>
   </view>

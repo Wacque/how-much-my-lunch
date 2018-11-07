@@ -1,8 +1,10 @@
 {
   "pages": [
+    
     "pages/index/index",
     "pages/addlist/addlist",
-    "pages/friends/friends"
+    "pages/friends/friends",
+    "pages/test/test"
   ],
   "tabBar": {
     "backgroundColor": "#F4F4F4",
