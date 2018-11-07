@@ -38,7 +38,7 @@ class Order extends Controller
                 }
             }
             if($exist === false) {
-                $item = ['create_time' =>  date("Y年m月d日", $v['create_time']) , 'order_id' => $v['order_id'], 'details' => [$v]];
+                $item = ['create_time' =>  date("Y年m月d日 H:i:s", $v['create_time']) , 'order_id' => $v['order_id'], 'details' => [$v]];
                 $tempdata[] = $item;
             }
         }
