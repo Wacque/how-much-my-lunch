@@ -58,7 +58,8 @@ class Friend extends Controller
                             GROUP BY
                                 mf.id 
                             ORDER BY
-                                COUNT( mo.id ) DESC');
+                                COUNT( mo.id ) DESC,
+				id');
        }else {
            $res = Db::name('friends')
                ->field('id,friend_name,friend_avatar')
