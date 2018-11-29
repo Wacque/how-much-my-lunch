@@ -31,6 +31,10 @@ Page({
     } else {
       console.log(app.globalData.openid)
       this.firstLoad()
+
+      if (app.globalData.userInfo.nickname == '') {
+        app.getUserInfo(app.globalData.openid);
+      }
     }
   },
 
@@ -167,8 +171,20 @@ Page({
   },
 
   addlist () {
-    wx.navigateTo({
-      url: '../addlist/addlist',
-    })
+    console.log(app.globalData.userInfo)
+    if (app.globalData.userInfo.nickname == '') {
+      wx.switchTab({
+        url: '../friends/friends',
+      })
+    } else {
+      wx.navigateTo({
+        url: '../addlist/addlist',
+      })
+    }
+    
+  },
+  
+  onShareAppMessage (e) {
+    
   }
 })

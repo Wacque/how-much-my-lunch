@@ -77,4 +77,16 @@ class Order extends Controller
         return defaultData(0, 'success', [], 0);
 
     }
+
+
+    public function getBook() {
+        $isbn = input('isbn');
+        $url = 'http://api.douban.com/book/subject/isbn/9787111587736';
+        $p = xml_parser_create();
+        $data = doCurl($url);
+        xml_parse_into_struct($p, $data, $vals, $index);
+        xml_parser_free($p);
+//        var_dump($index);
+        return defaultData(0, 'suucess', $vals, 0);
+    }
 }

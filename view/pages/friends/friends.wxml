@@ -13,7 +13,7 @@
     </view>
     <view  wx:for="{{friends}}" class='item flexCenter'>
       <view class='avatar flexCenter'>
-        <image class='crown' mode='widthFix' src='../../assets/image/crown.png' wx:if='{{index==1}}'></image>
+        <image class='crown' mode='widthFix' src='../../assets/image/crown.png' wx:if='{{index==1 && item.count > 0}}'></image>
         <image class='avatarIcon' src='{{item.friend_avatar}}' mode='widthFix'></image>
       </view>
       <view class='text fontStyleItalic'>

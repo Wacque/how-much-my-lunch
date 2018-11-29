@@ -19,7 +19,7 @@ App({
 ;            if (res.data.resultcode === 0) {
   
               that.globalData.openid = res.data.data.results[0].openid
-              that.getUserInfo()
+              that.getUserInfo(that.globalData.openid)
 
             } else {
               wx.showModal({
@@ -38,15 +38,15 @@ App({
   loginReadyCallBack: function (res) {
     return res
   },
-  getUserInfo: function () {
+  getUserInfo: function (openid) {
     var that = this
     this.wxrequest({
       url: that.globalData.baseUrl + '/index/auth/getUserMes',
       data: {
-        openid: that.globalData.openid
+        openid: openid
       },
       success: res => {
-        that.globalData.userInfo = res.data.data.results
+        that.globalData.userInfo = res.data.data.results[0]
         if (that.getUserMesCallback) {
           that.getUserMesCallback(res.data.data.results)
         }
@@ -85,9 +85,13 @@ App({
       }
     })
   },
+  onShow: function(options) {
+    console.log('----');
+    console.log(options);
+  },
   globalData: {
     userInfo: null,
-    // baseUrl: 'http://192.168.1.108:8888',
+    // baseUrl: 'http://www.meat.com:8088',
     baseUrl: 'https://api.wuacque.cn',
     // baseUrl: 'http://192.168.1.27:3001',
     openid: ''
