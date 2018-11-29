@@ -1,7 +1,0 @@
-<form report-submit='true' bindsubmit='fetchFormId' >
-  
-        <!-- <navigator > -->
-          <button class='form_id more' hover-class='none' form-type='submit' data-type='get_more' style='width:auto;'>查看更多></button>
-        <!-- </navigator> -->
-     
-</form>
