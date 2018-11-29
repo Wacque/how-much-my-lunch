@@ -92,8 +92,8 @@ App({
   globalData: {
     userInfo: null,
     // baseUrl: 'http://www.meat.com:8088',
-    baseUrl: 'https://api.wuacque.cn',
-    // baseUrl: 'http://192.168.1.27:3001',
+    // baseUrl: 'https://api.wuacque.cn',
+    baseUrl: 'http://192.168.1.108:8088',
     openid: ''
   }
 })

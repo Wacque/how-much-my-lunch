@@ -71,6 +71,8 @@ function tokenCheck($openid) {
         ->field('id')
         ->where('openid', $openid)
         ->find();
+
+//    echo \think\Db::getLastSql();
     if(!$res) {
         return defaultData(1, '非法请求', [], 0);
         exit();

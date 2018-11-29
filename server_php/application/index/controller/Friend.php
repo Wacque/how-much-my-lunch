@@ -41,7 +41,9 @@ class Friend extends Controller
 
    public function queryFriend() {
        $openid = input('openid');
+
        $userid = tokenCheck($openid);
+
        $sort = input('ifSort');
 
        // 判断是否排序
