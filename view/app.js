@@ -64,8 +64,9 @@ App({
       header: { "Content-Type": "application/x-www-form-urlencoded" },
       data: params.data,
       success: function (res) {
-        if ((res.data.errmsg && res.data.errmsg.indexOf('80013401') > -1) || (res.data.errmsg && res.data.errmsg.indexOf('80013402') > -1) || (res.data.errmsg && res.data.errmsg.indexOf('80000006') > -1)) {
-          // if (res.data.errmsg.indexOf('80013401') > -1 || res.data.errmsg.indexOf('80000006') > -1) {
+        if(res.data.resultcode == 0) {
+          params.success(res)
+        } else {
           that.login()
           that.loginReadyCallBack = res => {
             that.globalData.token = res
@@ -74,13 +75,6 @@ App({
               params.retry()
             }
           }
-          // }
-
-        } else {
-          // if(res.data.resultcode == 0) {
-          params.success(res)
-          // }
-
         }
       }
     })
@@ -91,9 +85,9 @@ App({
   },
   globalData: {
     userInfo: null,
-    // baseUrl: 'http://www.meat.com:8088',
+    baseUrl: 'http://www.meat.com:8080',
     // baseUrl: 'https://api.wuacque.cn',
-    baseUrl: 'http://192.168.1.108:8088',
+    // baseUrl: 'http://192.168.1.108:8088',
     openid: ''
   }
 })

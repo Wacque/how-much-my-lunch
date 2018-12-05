@@ -42,6 +42,9 @@ Page({
       data: {
         openid: app.globalData.openid
       },
+      retry: function () {
+        that.queryFriend();
+      },
       success: res => {
         var res = res.data.data.results
         for (let i = 0; i < res.length; i++) {

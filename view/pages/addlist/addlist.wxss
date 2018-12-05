@@ -106,6 +106,12 @@
   height: 160rpx;
   color: white;
 }
+.itemContainer .item .item_r .caculateData::after{
+  display: none;
+}
+.itemContainer .item .item_r .caculateData::before{
+  display: none
+}
 .itemContainer .item .item_r .before_caculateData {
   display: flex;
   flex-direction: column;
